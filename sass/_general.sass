@@ -190,7 +190,7 @@
 			line-height: 24px
 			display: flex
 			align-items: center
-			color: #9F9F9F
+			color: #000000
 			padding-left: 12px
 			padding-top: 3px
 		select
@@ -202,6 +202,8 @@
 			font-weight: normal
 			font-size: 16px
 			line-height: 24px
+			&:focus
+				color: #000000
 	&_button
 		position: absolute
 		bottom: 48px
@@ -320,10 +322,14 @@
 		margin-left: 16px
 		padding-left: 40px
 
-.addDocument-span
+.addDocument-flex
 	display: flex
 	justify-content: center
 	align-items: center
+	margin-top: 18px
+
+.addDocument-span
+	display: none
 	position: absolute
 	left: 64px
 	bottom: 150px
@@ -345,3 +351,30 @@
 		align-items: center
 		color: #303030
 
+.completed
+	display: none
+	position: absolute
+	left: 300px
+	bottom: 60px
+	vertical-align: center
+	&_flex
+		display: flex
+		justify-content: space-between
+	&_around
+		width: 32px
+		height: 32px
+		background: #E1FEE8
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+	p
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 20px
+		color: #303030
+		margin: 0
+		margin-left: 8px
+		margin-top: 7px

@@ -70,9 +70,9 @@
                         <p>Your gender</p>
                         <div class="fields_select">
                             <select id="input2" name="gender">
-                                <option value disabled selected>Chose your gender</option>
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
+                                <option value="" disabled selected>Chose your gender</option>
+                                <option value="Male" >Male</option>
+                                <option value="Female" >Female</option>
                             </select>
                         </div>
                     </div>
@@ -97,11 +97,19 @@
                 </div>
                 
                 <div>
-                    <button type="submit" class="content_button">Send info</button>
+                    <button id="Send-btn" type="submit" class="content_button">Send info</button>
                 </div>
                 
             </form>
 
+            <div id="completed" class="completed">
+                <div  class="completed_flex">
+                    <div class="completed_around">
+                        <img src="./src/icon/OK.png" alt="">
+                    </div>
+                    <p>Completed</p>
+                </div>
+            </div>
 
             <div class="addDocument">
                 <p>Proof your identity with some documents</p>
@@ -109,17 +117,15 @@
                     <input type="file" id="real-file" hidden="hidden" />
                     <button type="button" id="custom-button">Add document</button>
                 </div>
-                <!-- <button>Add document</button> -->
-                
             </div>
 
-            <div class="addDocument-span">
-                <span id="custom-text">555</span>
-                <img src="./src/icon/basket.png" alt="">
+            <div id="addDocument" class="addDocument-span">
+                <div class="addDocument-flex">
+                    <span id="custom-text">Файл не выбран.</span>
+                    <img src="./src/icon/basket.png" alt="">
+                </div>
             </div>
             
-
-
             <div class="img-squareGrayMiddle">
 				<img src="./src/img/squareGrayMiddle.png" alt="">
 			</div>

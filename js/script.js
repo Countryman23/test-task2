@@ -61,13 +61,15 @@ const input2 = document.getElementById('input2');
 const input3 = document.getElementById('input3');
 const input4 = document.getElementById('input4');
 const input5 = document.getElementById('input5');
+
 function checkInput() {
-  if(input1.value && input2.value) {
-    input3.style.display = "block"
-    input4.style.display = "block"
-    input5.style.display = "block"
-  }
+    if(input1.value && input2.value) {
+        input3.style.display = "block"
+        input4.style.display = "block"
+        input5.style.display = "block"
+    }
 }
+
 input1.addEventListener("change", checkInput);
 input2.addEventListener("change", checkInput);
 
@@ -75,17 +77,27 @@ input2.addEventListener("change", checkInput);
 const realFileBtn = document.getElementById("real-file");
 const customBtn = document.getElementById("custom-button");
 const customTxt = document.getElementById("custom-text");
+const addDocument = document.getElementById("addDocument");
 
 customBtn.addEventListener("click", function() {
     realFileBtn.click();
+    addDocument.style.display = "block"
     });
 
 realFileBtn.addEventListener("change", function() {
     if (realFileBtn.value) {
-        customTxt.innerHTML = realFileBtn.value.match(
-        /[\/\\]([\w\d\s\.\-\(\)]+)$/
-        )[1];
+        customTxt.innerText = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
     } else {
-        customTxt.innerHTML = "Файл не выбран.";
+        customTxt.innerText = "Файл не выбран.";
     }
 });
+
+//completed
+const sendBtn = document.getElementById("Send-btn");
+const completed = document.getElementById("completed");
+
+function visibl() {
+    completed.style.display = "block"
+};
+
+sendBtn.addEventListener("click", visibl)
