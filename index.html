@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Тестовое задание">
+	<meta name="autor" content="Rustam">
+	<title>TEST FOR ILINK</title>
+	<link rel="shortcut icon" href="./src/icon/ico.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.min.css">
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<section class="navbar">
+			<div class="logo">
+				<img src="./src/icon/logoLeft.png" alt="logo">
+				<img src="./src/icon/logoRight.png" alt="logo">
+			</div>
+			<div class="title">
+				<a>Jane Doe</a>
+				<a href="#about">Tell us about yourself</a>
+                <a href="#slider">Slider</a>
+			</div>
+		</section>
+		<section class="main">
+			<div class="avatar">
+				<img src="./src/img/ava.jpg" alt="">
+			</div>
+			<div class="header">
+				<h1>Jane Doe</h1>
+				<div class="header_title">
+					<div><span>Date of birth</span><p>21.04.2001</p></div>
+					<div><span>Gender</span><p>Female</p></div>
+					<div><span>Country</span><p>Corea</p></div>
+				</div>
+				<p class="header_about">About me</p>
+				<p class="header_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p class="header_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="img-cornerUp">
+				<img src="./src/icon/cornerUp.png" alt="">
+			</div>
+			<div class="img-cornerDown">
+				<img src="./src/icon/corberDown.png" alt="">
+			</div>
+			<div class="img-squarePurpleSmall">
+				<img src="./src/img/squarePurpleSmall.png" alt="">
+			</div>
+			<div class="img-squarePinkMiddle">
+				<img src="./src/img/squarePinkMiddle.png" alt="">
+			</div>
+		</section>
+		<section class="content" id="about">
+			<div class="title">Tell us about yourself</div>
+			<form action="/" method="POST" id="form">
+                <div class="fields">
+                    <div>
+                        <p>Your name</p>
+                        <label >
+                            <input id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Your gender</p>
+                        <div class="fields_select">
+                            <select id="input2" name="gender">
+                                <option value disabled selected>Chose your gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                   <div class="fields2" id="input3">
+                        <p>Your country</p>
+                        <label>
+                            <input class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
+                        </label>
+                    </div>
+                    <div class="fields3" id="input4">
+                        <p>Your City</p>
+                        <label >
+                            <input class="fields_input" type="text" name="city" value="" placeholder="Your native city">
+                        </label>
+                    </div>
+                    <div class="fields4"  id="input5">
+                        <p>Your date of birth</p>
+                        <label >
+                            <input class="fields_input" type="data" name="date" value="" placeholder="dd.mm.yyyy">
+                        </label>
+                    </div>
+                </div>
+                
+                <div>
+                    <button type="submit" class="content_button">Send info</button>
+                </div>
+                
+            </form>
+
+
+            <div class="addDocument">
+                <p>Proof your identity with some documents</p>
+                <div>
+                    <input type="file" id="real-file" hidden="hidden" />
+                    <button type="button" id="custom-button">Add document</button>
+                </div>
+                <!-- <button>Add document</button> -->
+                
+            </div>
+
+            <div class="addDocument-span">
+                <span id="custom-text">555</span>
+                <img src="./src/icon/basket.png" alt="">
+            </div>
+            
+
+
+            <div class="img-squareGrayMiddle">
+				<img src="./src/img/squareGrayMiddle.png" alt="">
+			</div>
+			<div class="img-squareGraySmall">
+				<img src="./src/img/squareGraySmall.png" alt="">
+			</div>
+			<div class="img-squareGrayBig">
+				<img src="./src/img/squareGrayBig.png" alt="">
+			</div>
+			<div class="img-squarePurpleMiddle">
+				<img src="./src/img/squarePurpleMiddle.png" alt="">
+			</div>
+			<div class="img-squareDarkGray">
+				<img src="./src/img/squareDarkGray.png" alt="">
+			</div>
+			<div class="img-squarePinkBig">
+				<img src="./src/img/squarePinkBig.png" alt="">
+			</div>
+		</section>
+		<section class="footer" id="slider">
+            <div class="slider">
+                <div class="slider_item">
+                    <img src="./src/img/imgDesktop-1.jpg" alt="Первый слайд">
+                    <div class="slideText">Slide this photo</div>
+                    <div class="slideTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+                </div>
+            
+                <div class="slider_item">
+                    <img src="./src/img/imgDesktop-2.jpg" alt="Второй слайд">
+                    <div class="slideText">Slide this photo</div>
+                    <div class="slideTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+                </div>
+            
+                <div class="slider_item">
+                    <img src="./src/img/imgDesktop-3.jpg" alt="Третий слайд">
+                    <div class="slideText">Slide this photo</div>
+                    <div class="slideTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+                </div>
+                
+                    <a class="slider_prev" onclick="minusSlide()"></a>
+                    <a class="slider_next" onclick="plusSlide()"></a>
+                
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+		</section>
+	</div>
+	
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

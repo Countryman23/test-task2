@@ -1,0 +1,347 @@
+.container
+	width: 1440px
+	margin: 0 auto
+	width: 1441px
+	background-color: #212121
+
+.navbar
+	height: 96px
+	left: 0px
+	top: 0px
+	background: #F8F3FF
+	display: flex
+	justify-content: space-between
+
+.logo
+	padding-left: 66px
+	padding-top: 26px
+	img
+		margin-left: -2px
+		width: 56px
+		height: 44px
+
+.title
+	padding-top: 38px
+	padding-right: 176px
+	a
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 20px
+		color: #8E43ED
+		cursor: pointer
+		text-decoration: none
+		&:first-child
+			cursor: none
+		&:nth-child(2)
+			margin-left: 32px
+		&:nth-child(3)
+			margin-left: 32px
+	&:hover
+		transform: scale(1.5)
+		transition: transform 1s
+.main
+	position: relative
+	height: 800px
+	background: #FFFFFF
+	display: flex
+	justify-content: flex-start
+
+.img-cornerUp
+	position: absolute
+	left: 0px
+	top: 0px
+	width: 337px
+	height: 259px
+
+.img-cornerDown
+	position: absolute
+	right: 0px
+	bottom: 0px
+	width: 337px
+	height: 259px
+
+.avatar
+	padding-left: 64px
+	padding-top: 100px
+	img
+		width: 528px
+		height: 600px
+		border-radius: 32px
+
+.header
+	padding-left: 32px
+	width: 664px
+	&_title
+		display: flex
+		justify-content: flex-start
+		padding-top: 24px
+		div
+			display: flex
+			justify-content: space-between
+			margin-right: 32px
+			p
+				margin: 0
+				margin-left: 8px
+				font-family: Montserrat
+				font-style: normal
+				font-weight: 500
+				font-size: 16px
+				line-height: 21px
+				color: #303030
+							
+
+			span
+				font-family: Montserrat
+				font-style: normal
+				font-weight: bold
+				font-size: 16px
+				line-height: 21px
+				color: #AA7ECD
+	h1
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 800
+		font-size: 56px
+		line-height: 72px
+		color: #303030
+		margin: 0
+		padding-top: 144px
+	&_text
+		font-family: Montserrat
+		font-style: normal
+		font-weight: normal
+		font-size: 18px
+		line-height: 32px
+		color: #000000
+	&_about
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 800
+		font-size: 27px
+		line-height: 36px
+		color: #303030
+
+.img-squarePurpleSmall, .img-squarePinkMiddle, .img-squarePinkBig, .img-squareGrayMiddle, .img-squareGraySmall, .img-squareGrayBig, .img-squarePurpleMiddle, .img-squareDarkGray
+	position: absolute
+	
+.img-squarePurpleSmall
+	left: 7px
+	top: 510px
+	width: 69px
+	height: 69px
+
+.img-squarePinkMiddle
+	position: absolute
+	left: 7px
+	top: 593px
+	width: 120px
+	height: 120px
+
+.content
+	position: relative
+	height: 750px
+	background: #F8F3FF
+	.title
+		position: absolute
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 800
+		font-size: 40px
+		line-height: 72px
+		color: #303030
+		padding-left: 64px
+		padding-top: 56px
+		z-index: 1
+	.fields
+		position: absolute
+		padding-left: 64px
+		padding-top: 168px
+		display: flex
+		justify-content: flex-start
+		z-index: 1
+		div
+			margin-right: 32px
+		p 
+			font-family: Montserrat
+			font-style: normal
+			font-weight: 600
+			font-size: 14px
+			line-height: 19px
+			display: flex
+			align-items: center
+			color: #303030
+			margin: 0
+			margin-bottom: 8px
+		&_input, &_select
+			width: 304px
+			height: 56px
+			left: 64px
+			top: 195px;
+			background: #FFFFFF
+			border: 1px solid #D9BBFF
+			box-sizing: border-box
+			border-radius: 12px
+			font-family: Montserrat
+			font-style: normal
+			font-weight: normal
+			font-size: 16px
+			line-height: 24px
+			display: flex
+			align-items: center
+			color: #9F9F9F
+			padding-left: 12px
+			padding-top: 3px
+		select
+			border: none
+			width: 280px
+			color: #707070
+			font-family: Montserrat
+			font-style: normal
+			font-weight: normal
+			font-size: 16px
+			line-height: 24px
+	&_button
+		position: absolute
+		bottom: 48px
+		left: 64px
+		width: 212px
+		height: 56px
+		background: #DED9E4
+		border-radius: 12px
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 24px
+		color: #FFFFFF
+		border: none
+		margin: 0 auto
+		z-index: 1
+		&:hover
+			background: #8E43ED;
+	.fields2
+		position: absolute
+		left: 64px
+		top: 290px
+	.fields3
+		position: absolute
+		left: 400px
+		top: 290px
+	.fields4
+		position: absolute
+		left: 735px
+		top: 290px
+
+#input3, #input4, #input5
+	display: none
+
+.img-squareGrayMiddle
+	left: 0px
+	top: 77px
+	width: 168px
+	height: 168px
+
+.img-squareGraySmall
+	left: 183px
+	top: 195px
+	width: 116px
+	height: 116px
+
+.img-squareGrayBig
+	left: 0px
+	bottom: 118px
+	width: 293px
+	height: 293px
+
+.img-squarePurpleMiddle
+	right: -20px
+	top: 47px
+	width: 168px
+	height: 168px
+
+.img-squareDarkGray
+	right: 227px
+	top: 170px
+	width: 116px
+	height: 116px
+
+.img-squarePinkBig
+	right: 174px
+	top: 308px
+	width: 116px
+	height: 116px
+
+.footer
+	height: 647px
+	background: #FFFFFF
+
+.addDocument
+	position: absolute
+	width: 976px
+	height: 104px
+	left: 64px
+	top: 430px
+	background: #FFFFFF
+	border: 1px dashed #D9BBFF
+	box-sizing: border-box
+	border-radius: 12px
+	z-index: 1
+	display: flex
+	justify-content: center
+	p
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 24px
+		display: flex
+		align-items: center
+		letter-spacing: 0.03em
+		color: #9993BD
+	button
+		width: 212px
+		height: 56px
+		font-family: Montserrat
+		font-style: normal
+		font-weight: 500
+		font-size: 16px
+		line-height: 24px
+		display: flex
+		align-items: center
+		text-align: center
+		color: #8E43ED
+		background: #FFFFFF
+		border: 1px solid #8E43ED
+		box-sizing: border-box
+		border-radius: 12px
+		margin-top: 23px
+		margin-left: 16px
+		padding-left: 40px
+
+.addDocument-span
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	left: 64px
+	bottom: 150px
+	z-index: 1
+	width: 256px
+	height: 56px
+	background: #FFFFFF
+	border: 1px solid #D9BBFF
+	box-sizing: border-box
+	border-radius: 12px
+	span
+		width: 80%
+		font-family: Montserrat
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 18px
+		display: flex
+		align-items: center
+		color: #303030
+

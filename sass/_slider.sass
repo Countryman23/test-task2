@@ -1,0 +1,90 @@
+.footer
+	position: relative
+
+.slider
+	position: absolute
+	left: 64px
+	top: 56px
+	&_item 
+		-webkit-animation-name: fade
+		-webkit-animation-duration: 1.5s
+		animation-name: fade
+		animation-duration: 1.5s
+		img 
+			width: 1312px
+			height: 535px
+			border-radius: 32px
+			z-index: -1
+
+	&_prev, &_next 
+		background-image: url("../src/icon/arrowLeft.png") 
+		cursor: pointer
+		position: absolute
+		top: 46%
+		width: 19px
+		height: 34px
+		color: #fff
+		&:hover
+			transform: scale(1.5)
+			transition: transform .5s
+	&_prev
+		left: 32px
+	&_next 
+		background-image: url("../src/icon/arrowRight.png")
+		right: 32px
+
+.slideText 
+	margin: 0 auto
+	position: absolute
+	left: 422px	
+	top: 197px
+	font-family: Montserrat
+	font-style: normal
+	font-weight: 800
+	font-size: 56px
+	line-height: 72px
+	color: #FFFFFF
+
+.slideTextDescr
+	position: absolute
+	font-family: Montserrat
+	font-style: normal
+	font-weight: 500
+	font-size: 18px
+	line-height: 32px
+	text-align: center
+	color: #FFFFFF
+	width: 580px
+	height: 64px
+	left: 366px
+	top: 285px
+	
+.slider-dots
+	position: absolute
+	left: 46% 
+	bottom: 32px
+	&_item
+		cursor: pointer
+		height: 12px
+		width: 12px
+		margin-left: 12px
+		border-radius: 50%
+		display: inline-block
+		transition: background-color 0.6s ease
+		background-image: url("../src/icon/ellipse.png")
+	
+.active
+	background-color: #fff
+
+@-webkit-keyframes fade 
+	from 
+		opacity: .4
+	to 
+		opacity: 1
+	
+@keyframes fade 
+	from 
+		opacity: .4
+	to
+		opacity: 1
+
