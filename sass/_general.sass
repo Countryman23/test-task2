@@ -6,12 +6,32 @@
 
 .navbar
 	height: 96px
-	left: 0px
-	top: 0px
+	// left: 0px
+	// top: 0px
 	background: #F8F3FF
 	display: flex
 	justify-content: space-between
-
+	&_title
+		padding-top: 38px
+		padding-right: 176px
+		a
+			font-family: Montserrat
+			font-style: normal
+			font-weight: 500
+			font-size: 16px
+			line-height: 20px
+			color: #8E43ED
+			cursor: pointer
+			text-decoration: none
+			&:first-child
+				cursor: none
+			&:nth-child(2)
+				margin-left: 32px
+			&:nth-child(3)
+				margin-left: 32px
+		&:hover
+			transform: scale(1.5)
+			transition: transform 1s
 .logo
 	padding-left: 66px
 	padding-top: 26px
@@ -20,27 +40,7 @@
 		width: 56px
 		height: 44px
 
-.title
-	padding-top: 38px
-	padding-right: 176px
-	a
-		font-family: Montserrat
-		font-style: normal
-		font-weight: 500
-		font-size: 16px
-		line-height: 20px
-		color: #8E43ED
-		cursor: pointer
-		text-decoration: none
-		&:first-child
-			cursor: none
-		&:nth-child(2)
-			margin-left: 32px
-		&:nth-child(3)
-			margin-left: 32px
-	&:hover
-		transform: scale(1.5)
-		transition: transform 1s
+
 .main
 	position: relative
 	height: 800px
@@ -273,7 +273,7 @@
 	height: 116px
 
 .img-mobil1, .img-mobil2
-    display: none
+	display: none
 
 .footer
 	height: 647px

@@ -1,22 +1,10 @@
-// @media (max-width: 370px) //ставим 992
-// 	.avatar
-// 		img
-// 			width: 400px
-
-// @media (max-width: 991px) //ставим 768
-
-// @media (max-width: 767px) //ставим 576
-
-// @media (max-width: 575px) //ставим 320
-
-@media (min-width: 320px) and (max-width: 575px)
+@media (min-width: 320px) and (max-width: 426px)
 	.container
-		width: 100%
-	.title
-		display: none
+		width: 350px
 	.navbar
-		width: 100%
 		height: 64px
+		&_title
+			display: none
 	.img-cornerUp, .img-cornerDown
 		display: none
 	.logo
@@ -27,38 +15,71 @@
 			width: 37px
 			height: 29px
 	.main
-		display: block		
+		display: block
+		height: 958px	
 	.avatar
 		padding-left: 0px
 		padding-top: 0px
 		img
 			width: 348px
 			height: 396px
+			margin-top: 24px
 	.header
+		width: 100%
+		padding-left: 0px
 		h1
-			width: 250px
 			padding-top: 0px
-			font-size: 40px;
-			line-height: 48px;
+			font-size: 40px
+			line-height: 48px
+			margin-top: 24px
+		&_text
+			padding-top: 16px
+			margin: 0px
+			font-size: 15px;
+			line-height: 24px
+		&_about
+			padding-top: 32px
+			width: 300px
+			margin: 0px
+			font-size: 20px;
+			line-height: 24px;
 		&_title
+			padding-top: 16px
+			width: 100%
 			div
 				display: block
+				margin-right: 39px
+				span
+					font-size: 14px
+					line-height: 18px
+				p
+					margin-left: 0px
+					margin-top: 4px
+					font-size: 14px
+					line-height: 18px
 	.img-squarePurpleSmall
-		left: 200px
-		top: 300px
+		left: 307px
+		top: 335px
+		width: 32px
+		height: 32px
+		transform: rotate(45deg)
 		img
 			width: 32px
 			height: 32px
-			transform: rotate(45deg)
+			border-radius: 50%
 	.img-squarePinkMiddle
-		left: 200px
-		top: 350px
+		left: 283px
+		top: 371px
+		width: 56px
+		height: 56px
+		transform: rotate(64deg)
 		img
-			width: 56px
-			height: 56px
+			width: 60px
+			height: 60px
 			transform: rotate(45deg)
+			border-radius: 100%
 	.slider
-		left: 15px
+		left: 0px
 		top: 56px
 		&_item 
 			img 
@@ -70,56 +91,62 @@
 		font-size: 40px
 		line-height: 48px
 	.slideTextDescr
+		width: 200px
 		left: 0px
 		top: 285px
 		font-size: 15px
 		line-height: 24px
-	.header
-		width: 300px
-		&_title
-			width: 300px
-		&_text
-			width: 300px
-			margin: 0
-			font-size: 15px;
-			line-height: 24px
-		&_about
-			width: 300px
-			margin: 0
-			font-size: 20px;
-			line-height: 24px;
 	.img-squareGrayMiddle, .img-squareGraySmall, .img-squareGrayBig, .img-squareDarkGray, .img-squarePurpleMiddle, .img-squarePinkBig
 		display: none
 	.img-mobil1
-		display: block
-		left: 260px
-		top: 550px
+		position: absolute
+		display: inline-block
+		right: 70px
+		top: 90px
 		img
 			width: 32px
 			height: 32px
-			transform: rotate(45deg)
+			transform: rotate(73deg)
+			border-radius: 50%
 	.img-mobil2
-		display: block
-		left: 260px
-		top: 850px
+		position: absolute
+		display: inline-block
+		right: 20px
+		top: 35px
 		img
-			width: 56px
-			height: 56px
+			width: 60px
+			height: 60px
 			transform: rotate(45deg)
+			border-radius: 100%
 	.addDocument
 		width: 348px
 		height: 175px
-		left: 15px
+		left: 0px
 		top: 430px
+		p
+			width: 100px
 	.content
 		height: 1037px
 		.title
+			font-size: 32px
+			line-height: 41px
+			padding-left: 0px
+			padding-top: 40px
+			padding-right: 0px
 		.fields
-			padding-top: 0px
+			left: 0px
+			top: 100px
+			padding-top: 60px
 			padding-left: 10px
 			display: block
+			div
+				margin-right: 0px
 			select
 				width: 200px
+			&_input
+				width: 108%
+				font-size: 16px
+				line-height: 24px
 	#input3
 		display: block
 		left: 10px
