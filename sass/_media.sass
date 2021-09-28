@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 426px)
 	.container
-		width: 350px
+		width: 375px
 	.navbar
 		height: 64px
 		&_title
@@ -24,6 +24,7 @@
 			width: 348px
 			height: 396px
 			margin-top: 24px
+			margin-left: 14px
 	.header
 		width: 100%
 		padding-left: 0px
@@ -32,20 +33,25 @@
 			font-size: 40px
 			line-height: 48px
 			margin-top: 24px
+			margin-left: 14px
 		&_text
 			padding-top: 16px
 			margin: 0px
 			font-size: 15px;
 			line-height: 24px
+			width: 348px
+			margin-left: 14px
 		&_about
 			padding-top: 32px
-			width: 300px
+			// width: 300px
 			margin: 0px
 			font-size: 20px;
 			line-height: 24px;
+			margin-left: 14px
 		&_title
 			padding-top: 16px
-			width: 100%
+			// width: 100%
+			margin-left: 14px
 			div
 				display: block
 				margin-right: 39px
@@ -78,24 +84,6 @@
 			height: 60px
 			transform: rotate(45deg)
 			border-radius: 100%
-	.slider
-		left: 0px
-		top: 56px
-		&_item 
-			img 
-				width: 346px
-				height: 535px
-	.slideText 
-		left: 10px	
-		top: 197px
-		font-size: 40px
-		line-height: 48px
-	.slideTextDescr
-		width: 200px
-		left: 0px
-		top: 285px
-		font-size: 15px
-		line-height: 24px
 	.img-squareGrayMiddle, .img-squareGraySmall, .img-squareGrayBig, .img-squareDarkGray, .img-squarePurpleMiddle, .img-squarePinkBig
 		display: none
 	.img-mobil1
@@ -121,10 +109,21 @@
 	.addDocument
 		width: 348px
 		height: 175px
-		left: 0px
-		top: 430px
+		left: 14px
+		top: 653px
+		display: block
 		p
-			width: 100px
+			width: 212px
+			text-align: center
+			margin-left: 68px
+			margin-top: 25px
+		button
+			margin-left: 68px
+			margin-top: 15px
+	.addDocument-span
+		left: 14px
+		bottom: 145px
+		width: 93%
 	.content
 		height: 1037px
 		.title
@@ -133,27 +132,71 @@
 			padding-left: 0px
 			padding-top: 40px
 			padding-right: 0px
+			width: 348px
+			margin-left: 14px
 		.fields
-			left: 0px
+			left: 14px
 			top: 100px
-			padding-top: 60px
-			padding-left: 10px
+			padding-top: 20px
+			padding-left: 0px
 			display: block
 			div
+				width: 102%
 				margin-right: 0px
 			select
-				width: 200px
+				width: 323px
 			&_input
-				width: 108%
+				width: 102%
 				font-size: 16px
 				line-height: 24px
+			p
+				margin-top: 40px
+		&_button
+			left: 14px
+			width: 93%
 	#input3
 		display: block
-		left: 10px
-		top: 170px
+		left: 0px
+		top: 270px
 	#input4
 		display: none !important
 	#input5
 		display: block
-		left: 10px
-		top: 270px
+		left: 0px
+		top: 390px
+	body
+		width: 375px
+	.completed
+		&_flex
+			display: none
+	.footer
+		height: 595px
+	.slider
+		left: 14px
+		top: 32px
+		&_item
+			img 
+				width: 346px
+				height: 535px
+		&_prev, &_next
+			top: 86%
+	.sliderText
+		width: 225px
+		left: 60px	
+		top: 160px
+		font-size: 40px
+		line-height: 48px
+		text-align: center
+	.sliderTextDescr
+		width: 254px
+		left: 45px
+		top: 275px
+		font-size: 15px
+		line-height: 24px
+	.slider-dots
+		left: 37%
+		bottom: 45px
+	.slider_item_imgDesktop
+		display: none
+	.slider_item_imgMobile
+		display: block

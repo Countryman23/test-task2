@@ -38,19 +38,19 @@ function showSlides(n) {
 const {form} = document.forms;
 
 function retrieveFormValue(event) {
-    event.preventDefault();
+	event.preventDefault();
 
-    const {name, gender, country, city, date} = form;
+	const {name, gender, country, city, date} = form;
 
-    const values = {
-        name: name.value,
-        gender: gender.value,
-        country: country.value,
-        city: city.value,
-        date: date.value,
-    };
+	const values = {
+		name: name.value,
+		gender: gender.value,
+		country: country.value,
+		city: city.value,
+		date: date.value,
+	};
 
-    console.log(values);
+	console.log(values);
 }
 
 form.addEventListener('submit', retrieveFormValue);
@@ -63,11 +63,11 @@ const input4 = document.getElementById('input4');
 const input5 = document.getElementById('input5');
 
 function checkInput() {
-    if(input1.value && input2.value) {
-        input3.style.display = "block"
-        input4.style.display = "block"
-        input5.style.display = "block"
-    }
+	if(input1.value && input2.value) {
+		input3.style.display = "block"
+		input4.style.display = "block"
+		input5.style.display = "block"
+	}
 }
 
 input1.addEventListener("change", checkInput);
@@ -80,16 +80,16 @@ const customTxt = document.getElementById("custom-text");
 const addDocument = document.getElementById("addDocument");
 
 customBtn.addEventListener("click", function() {
-    realFileBtn.click();
-    addDocument.style.display = "block"
-    });
+	realFileBtn.click();
+	addDocument.style.display = "block"
+	});
 
 realFileBtn.addEventListener("change", function() {
-    if (realFileBtn.value) {
-        customTxt.innerText = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
-    } else {
-        customTxt.innerText = "Файл не выбран.";
-    }
+	if (realFileBtn.value) {
+		customTxt.innerText = realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+	} else {
+		customTxt.innerText = "Файл не выбран.";
+	}
 });
 
 //completed
@@ -97,7 +97,7 @@ const sendBtn = document.getElementById("Send-btn");
 const completed = document.getElementById("completed");
 
 function visibl() {
-    completed.style.display = "block"
+	completed.style.display = "block"
 };
 
 sendBtn.addEventListener("click", visibl)
