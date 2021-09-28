@@ -3,10 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
-    <meta name="viewport" content="width=device-width" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta content="width=1180" name="viewport" id="viewport"> -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Тестовое задание">
 	<meta name="autor" content="Rustam">
@@ -18,7 +15,6 @@
 </head>
 
 <body>
-
 	<div class="container">
 		<section class="navbar">
 			<div class="logo">
@@ -117,15 +113,20 @@
             <div class="addDocument">
                 <p>Proof your identity with some documents</p>
                 <div>
-                    <input type="file" id="real-file" hidden="hidden" />
-                    <button type="button" id="custom-button">Add document</button>
+
+                    <button>
+                            <input type="file" onchange="onFileSelected(event)" id="real-file" hidden="hidden" />
+
+                            <input id="custom-button" placeholder="Add document"></input>
+                    </button>
+
                 </div>
             </div>
 
             <div id="addDocument" class="addDocument-span">
                 <div class="addDocument-flex">
                     <div>
-                        <img src="./src/icon/fase.png" alt="">
+                        <img id="myimage" height="40" src="./src/icon/fase.png" alt="">
                     </div>
                     <div>
                         <span id="custom-text">File_name_001</span>

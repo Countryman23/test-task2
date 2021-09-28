@@ -1,6 +1,5 @@
 .container
 	width: 1440px
-	// width: 1380px
 	margin: 0 auto
 
 .navbar
@@ -299,24 +298,32 @@
 		letter-spacing: 0.03em
 		color: #9993BD
 	button
-		width: 212px
-		height: 56px
-		font-family: Montserrat
-		font-style: normal
-		font-weight: 500
-		font-size: 16px
-		line-height: 24px
-		display: flex
-		align-items: center
-		text-align: center
-		color: #8E43ED
+		border: none
 		background: #FFFFFF
-		border: 1px solid #8E43ED
-		box-sizing: border-box
-		border-radius: 12px
-		margin-top: 23px
-		margin-left: 16px
-		padding-left: 40px
+		height: 0px
+	input
+		&:last-child
+			width: 212px
+			height: 56px
+			font-family: Montserrat
+			font-style: normal
+			font-weight: 500
+			font-size: 16px
+			line-height: 24px
+			display: flex
+			align-items: center
+			text-align: center
+			color: transparent
+			background: #FFFFFF
+			border: 1px solid #8E43ED
+			box-sizing: border-box
+			border-radius: 12px
+			margin-top: 22px
+			margin-left: 16px
+			padding-left: 0px
+			cursor: pointer
+			&::placeholder
+				color: #8E43ED
 
 .addDocument-flex
 	display: flex
@@ -336,10 +343,13 @@
 		&:first-child
 			width: 40px
 			height: 40px
+			border-radius: 50%
+			
 #basket
 	cursor: pointer
 	width: 11px
 	height: 15px
+	margin-bottom: 8px
 
 .addDocument-span
 	display: none

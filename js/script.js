@@ -116,7 +116,7 @@ function validate(event) {
 
 sendBtn.addEventListener("click", validate)
 
-//removeDocument
+//remove Document
 const basket = document.getElementById("basket");
 const addDocumentRemove = document.getElementById("addDocument");
 
@@ -125,3 +125,18 @@ function remove() {
 };
 
 basket.addEventListener("click", remove)
+
+//add image for block addDocument
+function onFileSelected(event) {
+    var selectedFile = event.target.files[0];
+    var reader = new FileReader();
+
+    var imgtag = document.getElementById("myimage");
+    imgtag.title = selectedFile.name;
+
+    reader.onload = function(event) {
+        imgtag.src = event.target.result;
+    };
+
+reader.readAsDataURL(selectedFile);
+}
