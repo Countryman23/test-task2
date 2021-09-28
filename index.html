@@ -61,12 +61,12 @@
 		</section>
 		<section class="content" id="about">
 			<div class="title">Tell us about yourself</div>
-			<form action="/" method="POST" id="form">
+			<form action="/" method="POST" id="form" onsubmit="return validate();">
                 <div class="fields">
                     <div>
                         <p>Your name</p>
                         <label >
-                            <input id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
+                            <input maxlength="15"id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
                         </label>
                     </div>
                     <div>
@@ -82,7 +82,7 @@
                    <div class="fields2" id="input3">
                         <p>Your country</p>
                         <label>
-                            <input class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
+                            <input required maxlength="10" class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
                         </label>
                     </div>
                     <div class="fields3" id="input4">
@@ -124,9 +124,18 @@
 
             <div id="addDocument" class="addDocument-span">
                 <div class="addDocument-flex">
-                    <span id="custom-text">Файл не выбран.</span>
-                    <img src="./src/icon/basket.png" alt="">
+                    <div>
+                        <img src="./src/icon/fase.png" alt="">
+                    </div>
+                    <div>
+                        <span id="custom-text">File_name_001</span>
+                        <p>JPG 2,5 mb</p>
+                    </div>
+                    <div>
+                        <img id="basket" src="./src/icon/basket.png" alt="">
+                    </div>
                 </div>
+                
             </div>
             
             <div class="img-squareGrayMiddle">

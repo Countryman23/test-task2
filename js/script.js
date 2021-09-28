@@ -53,7 +53,7 @@ function retrieveFormValue(event) {
 	console.log(values);
 }
 
-form.addEventListener('submit', retrieveFormValue);
+form.addEventListener('submit', validate);
 
 //visibl field
 const input1 = document.getElementById('input1');
@@ -92,12 +92,36 @@ realFileBtn.addEventListener("change", function() {
 	}
 });
 
+//validate
 //completed
 const sendBtn = document.getElementById("Send-btn");
 const completed = document.getElementById("completed");
 
 function visibl() {
-	completed.style.display = "block"
+    completed.style.display = "block"
 };
 
-sendBtn.addEventListener("click", visibl)
+function validate(event) {
+    var Name = document.getElementById("input1");
+
+    if(!Name.value) {
+        Name.style.border = "2px solid red";
+        return false;
+    }else if(Name.value) {
+        Name.style.border = "1px solid #D9BBFF"
+        return [visibl(), retrieveFormValue(event)];
+    }
+    return true
+}
+
+sendBtn.addEventListener("click", validate)
+
+//removeDocument
+const basket = document.getElementById("basket");
+const addDocumentRemove = document.getElementById("addDocument");
+
+function remove() {
+    addDocumentRemove.style.display = "none"
+};
+
+basket.addEventListener("click", remove)

@@ -1,14 +1,10 @@
 .container
-	// width: 1440px
-	width: 1380px
+	width: 1440px
+	// width: 1380px
 	margin: 0 auto
-	// width: 1441px
-	// background-color: #212121
 
 .navbar
 	height: 96px
-	// left: 0px
-	// top: 0px
 	background: #F8F3FF
 	display: flex
 	justify-content: space-between
@@ -40,7 +36,6 @@
 		margin-left: -2px
 		width: 56px
 		height: 44px
-
 
 .main
 	position: relative
@@ -327,7 +322,24 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	margin-top: 18px
+	margin-top: 8px
+	div
+		&:first-child
+			width: 19%
+			margin-bottom: 5px
+		&:nth-child(2)
+			width: 67%
+			margin-bottom: 8px
+		&:nth-child(3)
+			width: 6%
+	img
+		&:first-child
+			width: 40px
+			height: 40px
+#basket
+	cursor: pointer
+	width: 11px
+	height: 15px
 
 .addDocument-span
 	display: none
@@ -342,7 +354,7 @@
 	box-sizing: border-box
 	border-radius: 12px
 	span
-		width: 80%
+		width: 67%
 		font-family: Montserrat
 		font-style: normal
 		font-weight: normal
@@ -351,7 +363,16 @@
 		display: flex
 		align-items: center
 		color: #303030
-
+	p
+		margin: 0
+		font-family: Montserrat
+		font-style: normal
+		font-weight: normal
+		font-size: 12px
+		line-height: 18px
+		color: #AFAFAF
+		margin-top: 5px
+	
 .completed
 	display: none
 	position: absolute
