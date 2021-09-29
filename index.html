@@ -62,7 +62,7 @@
                     <div>
                         <p>Your name</p>
                         <label >
-                            <input maxlength="15"id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
+                            <input required maxlength="15" pattern="[a-zA-Z]+" title="Имя может содержать только латинские буквы" id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
                         </label>
                     </div>
                     <div>
@@ -78,19 +78,19 @@
                    <div class="fields2" id="input3">
                         <p>Your country</p>
                         <label>
-                            <input required maxlength="10" class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
+                            <input required maxlength="10" pattern="[0-9]+" title="Имя может содержать только цифры" class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
                         </label>
                     </div>
                     <div class="fields3" id="input4">
                         <p>Your City</p>
                         <label >
-                            <input class="fields_input" type="text" name="city" value="" placeholder="Your native city">
+                            <input required maxlength="10"  class="fields_input" type="text" name="city" value="" placeholder="Your native city">
                         </label>
                     </div>
                     <div class="fields4"  id="input5">
                         <p>Your date of birth</p>
                         <label >
-                            <input class="fields_input" type="data" name="date" value="" placeholder="dd.mm.yyyy">
+                            <input required maxlength="15" class="fields_input" type="data" name="date" value="" placeholder="dd.mm.yyyy">
                         </label>
                     </div>
                 </div>
@@ -132,8 +132,11 @@
                         <span id="custom-text">File_name_001</span>
                         <p>JPG 2,5 mb</p>
                     </div>
-                    <div>
-                        <img id="basket" src="./src/icon/basket.png" alt="">
+                    <div id="basket1" class = "tdimension">
+                        <a href = "#"></a>
+                    </div>
+                    <div class="basket" id="basket">
+                        <img src="./src/icon/basket.png" alt="">
                     </div>
                 </div>
                 

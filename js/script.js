@@ -102,7 +102,7 @@ function visibl() {
 };
 
 function validate(event) {
-    var Name = document.getElementById("input1");
+    let Name = document.getElementById("input1");
 
     if(!Name.value) {
         Name.style.border = "2px solid red";
@@ -119,19 +119,21 @@ sendBtn.addEventListener("click", validate)
 //remove Document
 const basket = document.getElementById("basket");
 const addDocumentRemove = document.getElementById("addDocument");
+const basket1 = document.getElementById("basket1");
 
 function remove() {
     addDocumentRemove.style.display = "none"
 };
 
 basket.addEventListener("click", remove)
+basket1.addEventListener("click", remove)
 
 //add image for block addDocument
 function onFileSelected(event) {
-    var selectedFile = event.target.files[0];
-    var reader = new FileReader();
+    let selectedFile = event.target.files[0];
+    let reader = new FileReader();
 
-    var imgtag = document.getElementById("myimage");
+    let imgtag = document.getElementById("myimage");
     imgtag.title = selectedFile.name;
 
     reader.onload = function(event) {

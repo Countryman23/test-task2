@@ -153,6 +153,9 @@
 		display: flex
 		justify-content: flex-start
 		z-index: 1
+		input
+			&:valid
+				border-color: green
 		div
 			margin-right: 32px
 		p 
@@ -185,6 +188,10 @@
 			color: #000000
 			padding-left: 12px
 			padding-top: 3px
+			// &:valid
+			// 	border-color: green
+			// &:invalid
+			// 	border-color: red
 		select
 			border: none
 			width: 280px
@@ -344,12 +351,29 @@
 			width: 40px
 			height: 40px
 			border-radius: 50%
-			
 #basket
-	cursor: pointer
-	width: 11px
-	height: 15px
+	display: none
 	margin-bottom: 8px
+	img
+		width: 11px
+		height: 15px
+
+.tdimension
+	width: 11px
+	height: 22px
+	margin-bottom: 8px
+	a
+		display: block
+		width: 70%
+		height: 75%
+		background: url("../src/icon/basket.png")
+		background-size: 105%
+		transform-style: preserve-3d
+		transform: rotateX(70deg)
+		transition: all 0.8s
+		&:hover 
+			a 
+			transform: rotateX(20deg) 
 
 .addDocument-span
 	display: none
