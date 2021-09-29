@@ -119,14 +119,22 @@ sendBtn.addEventListener("click", validate)
 //remove Document
 const basket = document.getElementById("basket");
 const addDocumentRemove = document.getElementById("addDocument");
-const basket1 = document.getElementById("basket1");
 
 function remove() {
     addDocumentRemove.style.display = "none"
 };
 
 basket.addEventListener("click", remove)
-basket1.addEventListener("click", remove)
+
+// //remove Document2
+// const basket2 = document.getElementById("basket2");
+// const addDocumentRemove2 = document.getElementById("addDocument");
+
+// function remove2() {
+//     addDocumentRemove2.style.display = "none"
+// };
+
+// basket2.addEventListener("click", remove2)
 
 //add image for block addDocument
 function onFileSelected(event) {

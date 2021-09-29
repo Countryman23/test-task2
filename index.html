@@ -2,8 +2,8 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="Тестовое задание">
 	<meta name="autor" content="Rustam">
@@ -24,7 +24,7 @@
 			<div class="navbar_title">
 				<a>Jane Doe</a>
 				<a href="#about">Tell us about yourself</a>
-                <a href="#slider">Slider</a>
+				<a href="#slider">Slider</a>
 			</div>
 		</section>
 		<section class="main">
@@ -50,7 +50,7 @@
 			</div>
 			<div class="img-squarePurpleSmall">
 				<img src="./src/img/squarePurpleSmall.png" alt="">
-            </div>
+			</div>
 			<div class="img-squarePinkMiddle">
 				<img src="./src/img/squarePinkMiddle.png" alt="">
 			</div>
@@ -58,91 +58,93 @@
 		<section class="content" id="about">
 			<div class="title">Tell us about yourself</div>
 			<form action="/" method="POST" id="form" onsubmit="return validate();">
-                <div class="fields">
-                    <div>
-                        <p>Your name</p>
-                        <label >
-                            <input required maxlength="15" pattern="[a-zA-Z]+" title="Имя может содержать только латинские буквы" id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
-                        </label>
-                    </div>
-                    <div>
-                        <p>Your gender</p>
-                        <div class="fields_select">
-                            <select id="input2" name="gender">
-                                <option value="" disabled selected>Chose your gender</option>
-                                <option value="Male" >Male</option>
-                                <option value="Female" >Female</option>
-                            </select>
-                        </div>
-                    </div>
-                   <div class="fields2" id="input3">
-                        <p>Your country</p>
-                        <label>
-                            <input required maxlength="10" pattern="[0-9]+" title="Имя может содержать только цифры" class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
-                        </label>
-                    </div>
-                    <div class="fields3" id="input4">
-                        <p>Your City</p>
-                        <label >
-                            <input required maxlength="10"  class="fields_input" type="text" name="city" value="" placeholder="Your native city">
-                        </label>
-                    </div>
-                    <div class="fields4"  id="input5">
-                        <p>Your date of birth</p>
-                        <label >
-                            <input required maxlength="15" class="fields_input" type="data" name="date" value="" placeholder="dd.mm.yyyy">
-                        </label>
-                    </div>
-                </div>
-                
-                <div>
-                    <button id="Send-btn" type="submit" class="content_button">Send info</button>
-                </div>
-                
-            </form>
+				<div class="fields">
+					<div>
+						<p>Your name</p>
+						<label >
+							<input required maxlength="15" pattern="[a-zA-Z]+" title="Имя может содержать только латинские буквы" id="input1" class="fields_input" type="text" name="name" value="" placeholder="Tell us your name">
+						</label>
+					</div>
+					<div>
+						<p>Your gender</p>
+						<div class="fields_select">
+							<select id="input2" name="gender">
+								<option value="" disabled selected>Chose your gender</option>
+								<option value="Male" >Male</option>
+								<option value="Female" >Female</option>
+							</select>
+						</div>
+					</div>
+				   <div class="fields2" id="input3">
+						<p>Your country</p>
+						<label>
+							<input required maxlength="10" pattern="[0-9]+" title="Имя может содержать только цифры" class="fields_input " type="text" name="country" value="" placeholder="Where are you from?">
+						</label>
+					</div>
+					<div class="fields3" id="input4">
+						<p>Your City</p>
+						<label >
+							<input required maxlength="10"  class="fields_input" type="text" name="city" value="" placeholder="Your native city">
+						</label>
+					</div>
+					<div class="fields4"  id="input5">
+						<p>Your date of birth</p>
+						<label >
+							<input required maxlength="15" class="fields_input" type="data" name="date" value="" placeholder="dd.mm.yyyy">
+						</label>
+					</div>
+				</div>
+				
+				<div>
+					<button id="Send-btn" type="submit" class="content_button">Send info</button>
+				</div>
+				
+			</form>
 
-            <div id="completed" class="completed">
-                <div  class="completed_flex">
-                    <div class="completed_around">
-                        <img src="./src/icon/OK.png" alt="">
-                    </div>
-                    <p>Completed</p>
-                </div>
-            </div>
+			<div id="completed" class="completed">
+				<div  class="completed_flex">
+					<div class="completed_around">
+						<img src="./src/icon/OK.png" alt="">
+					</div>
+					<p>Completed</p>
+				</div>
+			</div>
 
-            <div class="addDocument">
-                <p>Proof your identity with some documents</p>
-                <div>
+			<div class="addDocument">
+				<p>Proof your identity with some documents</p>
+				<div>
 
-                    <button>
-                            <input type="file" onchange="onFileSelected(event)" id="real-file" hidden="hidden" />
+					<button>
+							<input type="file" onchange="onFileSelected(event)" id="real-file" hidden="hidden" />
 
-                            <input id="custom-button" placeholder="Add document"></input>
-                    </button>
+							<input id="custom-button" placeholder="Add document"></input>
+					</button>
 
-                </div>
-            </div>
+				</div>
+			</div>
 
-            <div id="addDocument" class="addDocument-span">
-                <div class="addDocument-flex">
-                    <div>
-                        <img id="myimage" height="40" src="./src/icon/fase.png" alt="">
+			<div id="addDocument" class="addDocument-span">
+				<div class="addDocument-flex">
+					<div>
+						<img class="imgRadius" id="myimage" height="40" src="./src/icon/fase.png" alt="">
+					</div>
+					<div>
+						<span id="custom-text">File_name_001</span>
+						<p>JPG 2,5 mb</p>
+					</div>
+
+					<!-- <div id="basket1" class = "tdimension">
+						<a href = "#"></a>
+					</div> -->
+
+					<div>
+                        <img id="basket" src="./src/icon/basket.png" alt="">
                     </div>
-                    <div>
-                        <span id="custom-text">File_name_001</span>
-                        <p>JPG 2,5 mb</p>
-                    </div>
-                    <div id="basket1" class = "tdimension">
-                        <a href = "#"></a>
-                    </div>
-                    <div class="basket" id="basket">
-                        <img src="./src/icon/basket.png" alt="">
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="img-squareGrayMiddle">
+				</div>
+				
+			</div>
+			
+			<div class="img-squareGrayMiddle">
 				<img src="./src/img/squareGrayMiddle.png" alt="">
 			</div>
 			<div class="img-squareGraySmall">
@@ -159,48 +161,49 @@
 			</div>
 			<div class="img-squarePinkBig">
 				<img src="./src/img/squarePinkBig.png" alt="">
-            </div>
-            <div class="img-mobil1">
+			</div>
+			<div class="img-mobil1">
 				<img src="./src/img/squarePurpleSmall.png" alt="">
-            </div>
+			</div>
 			<div class="img-mobil2">
 				<img src="./src/img/squarePinkMiddle.png" alt="">
 			</div>
 		</section>
 		<section class="footer" id="slider">
-            <div class="slider">
-                <div class="slider_item">
-                    <img class="slider_item_imgDesktop" src="./src/img/imgDesktop-1.jpg" alt="Первый слайд">
-                    <img class="slider_item_imgMobile" src="./src/img/imgMobile-1.jpg" alt="Первый слайд">
-                    <div class="sliderText">Slide this photo</div>
-                    <div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
-                </div>
-            
-                <div class="slider_item">
-                    <img class="slider_item_imgDesktop" src="./src/img/imgDesktop-2.jpg" alt="Второй слайд">
-                    <img class="slider_item_imgMobile" src="./src/img/imgMobile-2.jpg" alt="Второй слайд">
-                    <div class="sliderText">Slide this photo</div>
-                    <div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
-                </div>
-            
-                <div class="slider_item">
-                    <img class="slider_item_imgDesktop" src="./src/img/imgDesktop-3.jpg" alt="Третий слайд">
-                    <img class="slider_item_imgMobile" src="./src/img/imgMobile-3.jpg" alt="Третий слайд">
-                    <div class="sliderText">Slide this photo</div>
-                    <div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
-                </div>
-                
-                    <a class="slider_prev" onclick="minusSlide()"></a>
-                    <a class="slider_next" onclick="plusSlide()"></a>
-                
-                <div class="slider-dots">
-                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
-                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
-                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
-                </div>
-            </div>
+			<div class="slider">
+				<div class="slider_item">
+					<img class="slider_item_imgDesktop" src="./src/img/imgDesktop-1.jpg" alt="Первый слайд">
+					<img class="slider_item_imgMobile" src="./src/img/imgMobile-1.jpg" alt="Первый слайд">
+					<div class="sliderText">Slide this photo</div>
+					<div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+				</div>
+			
+				<div class="slider_item">
+					<img class="slider_item_imgDesktop" src="./src/img/imgDesktop-2.jpg" alt="Второй слайд">
+					<img class="slider_item_imgMobile" src="./src/img/imgMobile-2.jpg" alt="Второй слайд">
+					<div class="sliderText">Slide this photo</div>
+					<div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+				</div>
+			
+				<div class="slider_item">
+					<img class="slider_item_imgDesktop" src="./src/img/imgDesktop-3.jpg" alt="Третий слайд">
+					<img class="slider_item_imgMobile" src="./src/img/imgMobile-3.jpg" alt="Третий слайд">
+					<div class="sliderText">Slide this photo</div>
+					<div class="sliderTextDescr">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
+				</div>
+				
+					<a class="slider_prev" onclick="minusSlide()"></a>
+					<a class="slider_next" onclick="plusSlide()"></a>
+				
+				<div class="slider-dots">
+					<span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+					<span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+					<span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+				</div>
+			</div>
 		</section>
 	</div>
+
 	
 	<script src="./js/script.js"></script>
 </body>
